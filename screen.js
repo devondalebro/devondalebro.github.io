@@ -1,4 +1,5 @@
-import { Circle } from "./circle.js";
+import { Circle } from './circle.js';
+
 import { ctx, canvas, radius } from './app.js';
 
 function clearCircle(ctx, x, y, radius) {
@@ -33,7 +34,7 @@ export class Screen {
       circle.handleCollisions();
 
       clearCircle(ctx, circle.xPos, circle.yPos, radius);
-    })
+    });
   }
 
   startScreen() {
@@ -45,7 +46,7 @@ export class Screen {
     // Write text on the canvas
     ctx.fillText('CLICK FOR SURPRISE!', canvas.width / 2, canvas.height / 2);
   }
-  
+
   hasCircles() {
     return !!(this.circles.length);
   }
