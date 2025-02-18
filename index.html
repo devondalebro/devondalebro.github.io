@@ -3,48 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas Drawing</title>
+    <title>From Memory</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas id="myCanvas" width="500" height="500"></canvas>
-    <script type="module" src="app.js"></script>
-    <div class="big-container">
-    <div class="container">
-            <img class="image", src="PXL_20240126_031159234.jpg">
-            <div class="box">
-                <div class="caption">A sick haircut I got</div>
+    <div class=""image-container">
+        <div class="image-row">
+            <img src="images/house_split_roof.png" class="roof">
+            <div class="text-container">
+                <h1></h1>
+                <h2 class="content">Scenes of my past sketched...</h2>
+                <h1 class="heading">From Memory</h1>
             </div>
-            <img class="image", src="PXL_20240209_141220383.jpg">
-            <div class="box">
-                <div class="caption">I love my little brother</div>
-            </div>
-    </div>
-    <div class="container">
-        <div class="center title">ABOUT ME</div>
-        <div class="space"></div>
-        <div class="center description">
-            Hi, my name is Eric! Many of my close friends call me Mingyuan 
-            though because ethnic names are cooler and there are simply too many Eric's xD
         </div>
-        <div class="space"></div>
-        <div class="center description">
-            I love playing basketball and piano. I also go to the gym alot and to accomodate that
-            I have been eating tons e.g. that big ass HSP.
+        <div class="image-row">
+            <img src="images/house_split_balcony.png" class="overlay" alt="Overlay Image">
+            <a href="./study.html">
+
+            <img src="images/house_split_study.png" class="overlay toggle" alt="Overlay Image">
+
+            </a>
+            <a href="./bed.html">
+            <img src="images/house_split_bed.png" class="overlay toggle" alt="Overlay Image">
+            </a>
+            <img src="images/house_split_garage_roof.png" class="overlay" alt="Overlay Image">
         </div>
+        <div class="image-row">
+            <img src="images/house_split_porch.png" class="overlay" alt="Overlay Image">
+            <a href="./piano.html">
+            <img src="images/house_split_piano.png" class="overlay toggle" alt="Overlay Image">
 
-    </div>
-    <div class="container">
-            <img class="image", src="PXL_20240130_020229485.MP.jpg">
-            <div class="box">
-                <div class="caption">Cool breakfast stall in China</div>
-            </div>
-            <img class="image", src="PXL_20240504_033501539.jpg">
-            <div class="box">
-                <div class="caption">Largest HSP I've ever had</div>
-            </div>
-    </div>
+            </a>
+            <a href="./kitchen.html">
+            <img src="images/house_split_stairs.png" class="overlay toggle" alt="Overlay Image">
 
+            </a>
+            <a href="./gym.html">
+            <img src="images/house_split_gym.png" class="overlay toggle" alt="Overlay Image">
+
+            </a>
+            <a href="./bball.html">
+                <img src="images/house_split_garage.png" class="overlay toggle" alt="Overlay Image">
+            </a>
+        </div>
+        <img src="images/house_split_front.png" class="overlay bot">
+        <div class="footer">
+            <h1 class="content">Mingyuan Xu |</h2>
+                <div class="contacts">
+                <a href="https://www.instagram.com/m1ngyuan_x/"><img src="images/contacts_1.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/eric-xu-47431a230?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzi3BhLESSGaFQwRV3QKrbg%3D%3D"><img src="images/contacts_2.png" alt=""></a>
+                <a href="https://open.spotify.com/user/ericxu2077?si=575822040be44bd4"><img src="images/contacts_3.png" alt=""></a>
+                </div>
+        </div>
+        <div class="buttons">
+            <img src="images/arrows_1.png" id="1">
+            <img src="images/arrows_2.png" id="2">
+            <img src="images/arrows_3.png" id="3">
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

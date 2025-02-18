@@ -1,79 +1,129 @@
-canvas {
-    position: absolute;
-    z-index: 1;
+@font-face {
+    font-family: 'lora';
+    src: url('fonts/Lora-VariableFont_wght.ttf') format('truetype');
 }
 
-.top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
+@font-face {
+    font-family: 'playfair';
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
 }
 
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-}
-.bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
+:root {
+    --x: 1.5; /* Define a CSS variable */
 }
 
-.image {
-    width: 300px;
-    height: 315px;
-}
-
-
-
-.caption {
-    font-size: 20px;
-    color: white;
-}
-
-.box {
-    background: blue; 
-    border-radius: 25px;
-    text-align: center;
-    width: 300px;
-    max-height: 50%;
-}
-
-.space {
-    height: 30px;
-}
-
-
-.center {
-    text-align: center;
-}
-
-.title {
-    font-size: 50px;
-}
-
-.description {
-    width: 500px;
-}
-
-.container {
+.image-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full height of the viewport */
-    width: 500px;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.big-container {
+body {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.text-container {
+    flex-grow: 1;
+    display: flex;
+    height: calc(12.8vh * var(--x)); /* Multiply using calc() */
+    flex-direction: column;
+    margin-right: 5%;
+}
+.slide-content {
+    font-family: 'lora';
+    font-weight: 100;
+    padding-inline: 5%;
+    text-align: center;
+}
+
+.content {
+    font-family: 'lora';
+    font-weight: 100;
+}
+
+.heading {
+    font-family: 'playfair';
+    margin: 0;
+    text-align: right;
+}
+
+a {
+    display: block; /* Removes extra space */
+    line-height: 0; /* Prevents extra spacing */
+}
+
+/* Row container to align images */
+.image-row {
+    display: flex;
+    width: 100vw; /* Full width */
+    margin: 0;
+    padding: 0;
+}
+
+.slide-image {
+    height: 70vh;
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.roof {
+    padding-top: 50px;
+    height: calc(12.8vh * var(--x)); /* Multiply using calc() */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    bottom: 0;
+}
+
+.buttons img {
+    height: auto; /* Maintain aspect ratio */
+    max-height: 5vh; /* Limit height if necessary */
+    bottom: 0;
+}
+.bot {
+    height: calc(9.46vh * var(--x));
+}
+
+img {
+    height: calc(15vh * var(--x));
+}
+
+.contacts {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.contacts img {
+    height: 5vh;
+    margin-inline: 40%;
+}
+.footer {
+    font-family: 'lora';
+    font-weight: lighter;
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Stack text and buttons */
+    align-items: center; /* Center everything */
+    justify-content: center;
+    position: fixed; /* Ensure it stays at the bottom */
+    bottom: 0;
+    height: 10vh; /* Adjust height to fit content */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds background for visibility */
+} 
+
+.footer h1 {
+    pointer-events: none;
 }
