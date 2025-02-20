@@ -29,7 +29,7 @@ document.getElementById('3').addEventListener('click', function() {
 });
 
 function getPreviousPage() {
-  const index = order.indexOf(currentPage);
+  const index = order.indexOf(currentPage) === -1 ? 0 : order.indexOf(currentPage);
   if (index === 0) {
     return order[order.length - 1];
   } else {
@@ -38,7 +38,7 @@ function getPreviousPage() {
 }
 
 function getNextPage() {
-  const index = order.indexOf(currentPage);
+  const index = order.indexOf(currentPage) === -1 ? 0 : order.indexOf(currentPage);
   if (index === order.length - 1) {
     return order[0];
   } else {
